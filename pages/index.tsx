@@ -7,10 +7,10 @@ const mainMenu = [
     label: '1 - React Components using TypeScript',
     href: '/01-js-to-ts',
   },
-  // {
-  //   label: '2 - Mutually exclusive props',
-  //   href: '/02-mutually-exclusive',
-  // },
+  {
+    label: '2 - Mutually exclusive props',
+    href: '/02-mutually-exclusive',
+  },
   // {
   //   label: '3 - More strict features',
   //   href: '/03-more-strict',
