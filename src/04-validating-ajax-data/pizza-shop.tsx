@@ -1,11 +1,7 @@
 import { FC, useMemo, useState } from 'react';
 
-import type {
-  ExtraIngredient,
-  ExtraIngredients,
-  Pizza,
-  PizzaOnOrder,
-} from './types';
+import type { Pizza, PizzaOnOrder } from './types';
+import type { ExtraIngredient, ExtraIngredients } from './schema';
 
 import { OrderedPizza } from './ordered-pizza';
 import { PizzaOnMenu } from './pizza-on-menu';
@@ -60,6 +56,6 @@ function calculateTotalPrice(order: PizzaOnOrder[]) {
       sum +
       pizza.price +
       pizza.extraIngredients.reduce((sum, extra) => sum + extra.price, 0),
-    0
+    0,
   );
 }
