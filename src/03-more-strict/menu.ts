@@ -55,5 +55,13 @@ export const extraIngredients: ExtraIngredients = {
 export const getExtraIngredient = (name: string): ExtraIngredient => {
   const extraIngredient = extraIngredients[name];
 
+  if (!extraIngredient) {
+    // We can send the message to Sentry or any similar tool
+    // throw new Error(`Extra ingredient ${name} not found`);
+    console.log(`Extra ingredient ${name} not found`);
+
+    return { name, price: 0.5 };
+  }
+
   return extraIngredient;
 };
