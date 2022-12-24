@@ -11,10 +11,10 @@ const mainMenu = [
     label: '2 - Mutually exclusive props',
     href: '/02-mutually-exclusive',
   },
-  // {
-  //   label: '3 - More strict features',
-  //   href: '/03-more-strict',
-  // },
+  {
+    label: '3 - More strict features',
+    href: '/03-more-strict',
+  },
   // {
   //   label: '4 - Validating data at the boundary',
   //   href: '/04-validating-ajax-data',
