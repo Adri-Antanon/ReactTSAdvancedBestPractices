@@ -19,10 +19,10 @@ const mainMenu = [
     label: '4 - Validating data at the boundary',
     href: '/04-validating-ajax-data',
   },
-  // {
-  //   label: '5 - Inferring TypeScript types',
-  //   href: '/05-inferring-types',
-  // },
+  {
+    label: '5 - Inferring TypeScript types',
+    href: '/05-inferring-types',
+  },
   // {
   //   label: '6 - Generic React prop types',
   //   href: '/06-generic-prop-types',
