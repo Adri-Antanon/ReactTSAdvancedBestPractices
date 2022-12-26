@@ -9,14 +9,15 @@ export const TwoForms: FC = () => {
         initialValues={{
           firstName: 'John',
           lastName: 'Doe',
+          birthDate: new Date().toDateString(),
         }}
         onSubmit={(values) =>
           alert(
-            `${values.firstName} ${values.lastname}\n\n${JSON.stringify(
+            `${values.firstName} ${values.lastName}\n\n${JSON.stringify(
               values,
               null,
-              2
-            )}`
+              2,
+            )}`,
           )
         }
       />
@@ -30,9 +31,9 @@ export const TwoForms: FC = () => {
         }}
         onSubmit={(values) =>
           alert(
-            `${values.street} ${values.housenumber} ${
+            `${values.street} ${values.houseNumber} ${
               values.city
-            }\n\n${JSON.stringify(values, null, 2)}`
+            }\n\n${JSON.stringify(values, null, 2)}`,
           )
         }
       />
