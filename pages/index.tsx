@@ -23,10 +23,10 @@ const mainMenu = [
     label: '5 - Inferring TypeScript types',
     href: '/05-inferring-types',
   },
-  // {
-  //   label: '6 - Generic React prop types',
-  //   href: '/06-generic-prop-types',
-  // },
+  {
+    label: '6 - Generic React prop types',
+    href: '/06-generic-prop-types',
+  },
   // {
   //   label: '7 - Deriving component prop types',
   //   href: '/07-deriving-prop-types',
