@@ -39,10 +39,10 @@ const mainMenu = [
     label: '9 - Type mapping with Omit<> and/or Pick<>',
     href: '/09-type-mapping',
   },
-  // {
-  //   label: '10 - Using Readonly<>',
-  //   href: '/10-using-readonly',
-  // },
+  {
+    label: '10 - Using Readonly<>',
+    href: '/10-using-readonly',
+  },
   // {
   //   label: '11 - Custom type mapping DeepReadonly<>',
   //   href: '/11-using-deep-readonly',
