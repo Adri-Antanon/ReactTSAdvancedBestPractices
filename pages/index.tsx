@@ -35,10 +35,10 @@ const mainMenu = [
     label: '8 - Inferring Zod schema types',
     href: '/08-inferring-schema-types',
   },
-  // {
-  //   label: '9 - Type mapping with Omit<> and/or Pick<>',
-  //   href: '/09-type-mapping',
-  // },
+  {
+    label: '9 - Type mapping with Omit<> and/or Pick<>',
+    href: '/09-type-mapping',
+  },
   // {
   //   label: '10 - Using Readonly<>',
   //   href: '/10-using-readonly',
