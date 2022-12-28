@@ -27,14 +27,14 @@ const mainMenu = [
     label: '6 - Generic React prop types',
     href: '/06-generic-prop-types',
   },
-  // {
-  //   label: '7 - Deriving component prop types',
-  //   href: '/07-deriving-prop-types',
-  // },
-  // {
-  //   label: '8 - Inferring Zod schema types',
-  //   href: '/08-inferring-schema-types',
-  // },
+  {
+    label: '7 - Deriving component prop types',
+    href: '/07-deriving-prop-types',
+  },
+  {
+    label: '8 - Inferring Zod schema types',
+    href: '/08-inferring-schema-types',
+  },
   // {
   //   label: '9 - Type mapping with Omit<> and/or Pick<>',
   //   href: '/09-type-mapping',
