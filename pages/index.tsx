@@ -43,10 +43,10 @@ const mainMenu = [
     label: '10 - Using Readonly<>',
     href: '/10-using-readonly',
   },
-  // {
-  //   label: '11 - Custom type mapping DeepReadonly<>',
-  //   href: '/11-using-deep-readonly',
-  // },
+  {
+    label: '11 - Custom type mapping DeepReadonly<>',
+    href: '/11-using-deep-readonly',
+  },
   // {
   //   label: '12 - Displaying types',
   //   href: '/12-displaying-types',
