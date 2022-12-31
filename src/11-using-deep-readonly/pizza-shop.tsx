@@ -13,20 +13,20 @@ export const PizzaShop: FC = () => {
 
   const onPlaceOrder = () => {
     const extrasForAEuro = order.flatMap((pizza) =>
-      pizza.extraIngredients.filter((extra) => extra.price === 1)
+      pizza.extraIngredients.filter((extra) => extra.price === 1),
     );
     console.log('Extras for a Euro', extrasForAEuro);
 
-    pizzas.push({
-      name: `New Pizza ${new Date().toLocaleTimeString()}`,
-      price: 10,
-      extras: ['cheese'],
-      ingredients: ['tomato sauce'],
-    });
+    // pizzas.push({
+    //   name: `New Pizza ${new Date().toLocaleTimeString()}`,
+    //   price: 10,
+    //   extras: ['cheese'],
+    //   ingredients: ['tomato sauce'],
+    // });
 
-    if (pizzas[0]) {
-      pizzas[0].price *= 10;
-    }
+    // if (pizzas[0]) {
+    //   pizzas[0].price *= 10;
+    // }
 
     setOrder([]);
   };
@@ -82,6 +82,6 @@ function calculateTotalPrice(order: PizzaOnOrder[]) {
       sum +
       pizza.price +
       pizza.extraIngredients.reduce((sum, extra) => sum + extra.price, 0),
-    0
+    0,
   );
 }

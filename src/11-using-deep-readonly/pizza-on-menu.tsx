@@ -5,9 +5,10 @@ import { FC, useState } from 'react';
 import { useIntl } from 'react-intl';
 import { LabeledCheckbox } from '../components';
 import { getExtraIngredient } from './menu';
+import { DeepReadonly } from './types';
 
 type Props = {
-  pizza: Pizza;
+  pizza: DeepReadonly<Pizza>;
   onAddToOrder: (pizza: PizzaOnOrder) => void;
 };
 
@@ -27,7 +28,7 @@ export const PizzaOnMenu: FC<Props> = ({ pizza, onAddToOrder }) => {
                 <span key={ingredient} className="text-capitalize">
                   {ingredient}
                 </span>
-              ))
+              )),
             )}
           </div>
         </div>
