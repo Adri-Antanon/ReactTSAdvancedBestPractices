@@ -20,6 +20,8 @@ export type ExtraIngredient = Readonly<{
   price: number;
 }>;
 
-export type PizzaOnOrder = Resolve<Pick<Pizza, 'name' | 'price'>> & {
-  readonly extraIngredients: ExtraIngredient[];
-};
+export type PizzaOnOrder = Resolve<
+  Pick<Pizza, 'name' | 'price'> & {
+    readonly extraIngredients: ExtraIngredient[];
+  }
+>;
