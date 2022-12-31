@@ -47,10 +47,10 @@ const mainMenu = [
     label: '11 - Custom type mapping DeepReadonly<>',
     href: '/11-using-deep-readonly',
   },
-  // {
-  //   label: '12 - Displaying types',
-  //   href: '/12-displaying-types',
-  // },
+  {
+    label: '12 - Displaying types',
+    href: '/12-displaying-types',
+  },
   // {
   //   label: '13 - Type predicate functions',
   //   href: '/13-predicates-assertions',

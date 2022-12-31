@@ -1,8 +1,7 @@
 import type { FC } from 'react';
-import type { PizzaOnOrder } from './types';
+import type { DeepReadonly, PizzaOnOrder } from './types';
 
 import { useIntl } from 'react-intl';
-import { DeepReadonly } from './types';
 
 type Props = {
   pizza: DeepReadonly<PizzaOnOrder>;
