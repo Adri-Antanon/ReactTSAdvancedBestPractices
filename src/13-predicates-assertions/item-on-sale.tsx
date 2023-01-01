@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import { BookOnSale } from './book-on-sale';
 import { MagazineOnSale } from './magazine-on-sale';
 import { PenOnSale } from './pen-on-sale';
-import { Book, ItemsOnSale, Magazine, Pen } from './types';
+import { isBook, isMagazine, isPen, ItemsOnSale } from './types';
 
 type Props = {
   item: ItemsOnSale;
@@ -11,11 +11,19 @@ type Props = {
 export const ItemOnSale: FC<Props> = ({ item }) => {
   switch (item.type) {
     case 'book':
-      return <BookOnSale book={item as Book} />;
+      if (isBook(item)) {
+        return <BookOnSale book={item} />;
+      } else {
+        console.log('isBook(item) is false', item);
+      }
     case 'magazine':
-      return <MagazineOnSale magazine={item as Magazine} />;
-    // case 'pen':
-    //   return <PenOnSale pen={item as Pen} />;
+      if (isMagazine(item)) {
+        return <MagazineOnSale magazine={item} />;
+      }
+    case 'pen':
+      if (isPen(item)) {
+        return <PenOnSale pen={item} />;
+      }
   }
 
   return null;
