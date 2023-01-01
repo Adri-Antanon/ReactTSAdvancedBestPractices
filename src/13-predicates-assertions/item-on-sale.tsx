@@ -2,16 +2,7 @@ import type { FC } from 'react';
 import { BookOnSale } from './book-on-sale';
 import { MagazineOnSale } from './magazine-on-sale';
 import { PenOnSale } from './pen-on-sale';
-import {
-  isBook,
-  isMagazine,
-  isPen,
-  ItemsOnSale,
-  assertBook,
-  assertMagazine,
-  assertPen,
-  assertNever,
-} from './types';
+import { ItemsOnSale, assertNever } from './types';
 
 type Props = {
   item: ItemsOnSale;
@@ -28,6 +19,4 @@ export const ItemOnSale: FC<Props> = ({ item }) => {
     default:
       assertNever(item);
   }
-
-  return null;
 };
