@@ -51,10 +51,10 @@ const mainMenu = [
     label: '12 - Displaying types',
     href: '/12-displaying-types',
   },
-  // {
-  //   label: '13 - Type predicate functions',
-  //   href: '/13-predicates-assertions',
-  // },
+  {
+    label: '13 - Type predicate functions',
+    href: '/13-predicates-assertions',
+  },
   // {
   //   label: '14 - Type assertion functions',
   //   href: '/13-predicates-assertions',
