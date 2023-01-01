@@ -10,6 +10,7 @@ import {
   assertBook,
   assertMagazine,
   assertPen,
+  assertNever,
 } from './types';
 
 type Props = {
@@ -19,14 +20,13 @@ type Props = {
 export const ItemOnSale: FC<Props> = ({ item }) => {
   switch (item.type) {
     case 'book':
-      assertBook(item);
       return <BookOnSale book={item} />;
     case 'magazine':
-      assertMagazine(item);
       return <MagazineOnSale magazine={item} />;
     case 'pen':
-      assertPen(item);
       return <PenOnSale pen={item} />;
+    default:
+      assertNever(item);
   }
 
   return null;

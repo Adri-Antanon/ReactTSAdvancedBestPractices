@@ -43,4 +43,9 @@ export function assertPen(item: ItemsOnSale): asserts item is Pen {
     throw new Error('Item is not a pen');
   }
 }
+
+export function assertNever(x: never): never {
+  throw new Error('Unexpected object: ' + x);
+}
+
 export type ItemsOnSale = Book | Magazine | Pen;

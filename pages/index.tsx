@@ -59,10 +59,10 @@ const mainMenu = [
     label: '14 - Type assertion functions',
     href: '/13-predicates-assertions',
   },
-  // {
-  //   label: '15 - Exhaustiveness checking',
-  //   href: '/13-predicates-assertions',
-  // },
+  {
+    label: '15 - Exhaustiveness checking',
+    href: '/13-predicates-assertions',
+  },
 ];
 
 const Home: NextPage = () => {
